@@ -1,0 +1,36 @@
+.messages {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+    gap: 10px;
+    padding: 20px;
+    list-style: none;
+    box-sizing: border-box;
+
+    &__listItem {
+        max-width: 50%;
+        background-color: blanchedalmond;
+        border-radius: 30px;
+        font-size: 24px;
+        padding: 5px 20px;
+
+        & p {
+            max-width: 100%;
+        }
+
+        &:has(.messages__self) {
+            align-self: flex-end;
+        }
+    }
+
+    &__notSelf {
+        width: 100%;
+    }
+
+    &__self {
+        width: 100%;
+    }
+}

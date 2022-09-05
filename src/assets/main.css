@@ -1,0 +1,17 @@
+.page {
+    margin: 0;
+}
+
+#app {
+    max-width: 1440px;
+    background-color: blueviolet;
+    height: 100vh;
+    border-radius: 60px;
+    display: grid;
+    grid-template-rows: 100px 1fr 150px;
+    gap: 20px;
+    display: relative;
+    grid-template-areas: 'header'
+        'messages'
+        'form';
+}
